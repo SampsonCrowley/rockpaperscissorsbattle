@@ -6,10 +6,16 @@ module Rockpaperscissorsbattle
       @player2 = args[:player2] || Computer.new
     end
 
-    def play
+    def welcome
       puts "Welcome to Rock Paper Scissors"
+    end
+
+    def play
       puts "Get ready to Battle!"
+
+      print "Player 1:"
       pick1 = @player1.pick(@options)
+      print "Player 2:"
       pick2 = @player2.pick(@options)
       compare(pick1, pick2)
     end

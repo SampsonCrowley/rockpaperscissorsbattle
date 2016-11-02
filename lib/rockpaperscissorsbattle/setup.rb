@@ -23,13 +23,19 @@ module Rockpaperscissorsbattle
 
     def track_winners(winner)
       @score[winner] += 1
-      p @score
+      puts "Player 1 score: #{@score[1]}"
+      puts "Player 2 score: #{@score[2]}"
+      puts "Ties: #{@score[0]}"
     end
 
     def reset
       puts "Would you like to play again? (Y/N)"
       choice = gets.strip.downcase
-      start if choice == "y"
+      if choice == "y"
+        start
+      else
+        puts "Thanks for playing!"
+      end
     end
 
 
