@@ -5,7 +5,7 @@ module Rockpaperscissorsbattle
       choice = nil
       until options.include?(choice)
         puts %Q;Enter "r", "p" or "s";
-        choice = gets.strip
+        choice = gets.strip.to_sym
       end
       choice
     end
