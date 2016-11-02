@@ -1,7 +1,7 @@
 module Rockpaperscissorsbattle
   class Computer < Player
     def pick(options)
-      options.sample
+      options.keys.sample
     end
   end
 
