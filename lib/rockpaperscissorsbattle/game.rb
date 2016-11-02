@@ -17,11 +17,14 @@ module Rockpaperscissorsbattle
     def compare(pick1, pick2)
       if @options[pick1] == pick2
         puts "Player1 wins!"
+        winner = 1
       elsif
         @options[pick2] == pick1
         puts "Player2 wins!"
+        winner = 2
       else
         "You tied..."
+        winner = 0
       end
     end
 
