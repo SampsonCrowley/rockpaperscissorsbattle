@@ -4,7 +4,7 @@ module Rockpaperscissorsbattle
     def pick(options)
       choice = nil
       until options.include?(choice)
-        Q;Enter "r", "p" or "s";
+        puts %Q;Enter "r", "p" or "s";
         choice = gets.strip
       end
       choice
