@@ -1,3 +1,4 @@
+require "io/console"
 require "rockpaperscissorsbattle/version"
 require "rockpaperscissorsbattle/player"
 require "rockpaperscissorsbattle/computer"
