@@ -14,8 +14,6 @@ module Rockpaperscissorsbattle
       else
         @game = Game.new
       end
-      @game.play
-      
     end
 
     def start
